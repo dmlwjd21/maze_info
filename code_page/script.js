@@ -9,7 +9,7 @@ function to1() {
 
 	function ans()
 	{
-		if(input.value == "시작")
+		if(input.value == "접속")
 			location.href="./code_page/page1_start.html";
 		else
 		{
@@ -21,7 +21,7 @@ function to1() {
 	//타이핑을 했을 때
 	input.addEventListener("keydown", e => {
 		//엔터라면 답안 확인(ans 함수 호출)
-		if(e.keyCode === 13) {
+		if(e.keyCode === 13) { //13==enter
 			ans();
 		}
 	});
